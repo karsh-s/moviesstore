@@ -47,6 +47,10 @@
               href="{% url 'movies.delete_review' id=template_data.movie.id review_id=review.id %}">
               Delete
             </a>
+            <a class="btn btn-flag"
+              href="{% url 'movies.report' id=template_data.movie.id review_id=review.id %}">
+              Report
+            </a>
             {% endif %}
           </li>
           {% endfor %}
